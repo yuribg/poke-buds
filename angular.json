@@ -3,7 +3,7 @@
     "version": 1,
     "newProjectRoot": "projects",
     "projects": {
-        "front-end": {
+        "poke-buds": {
             "projectType": "application",
             "schematics": {},
             "root": "",
@@ -13,7 +13,7 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser",
                     "options": {
-                        "outputPath": "dist/front-end",
+                        "outputPath": "dist/poke-buds",
                         "index": "src/index.html",
                         "main": "src/main.ts",
                         "polyfills": "src/polyfills.ts",
@@ -59,18 +59,18 @@
                 "serve": {
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "options": {
-                        "browserTarget": "front-end:build"
+                        "browserTarget": "poke-buds:build"
                     },
                     "configurations": {
                         "production": {
-                            "browserTarget": "front-end:build:production"
+                            "browserTarget": "poke-buds:build:production"
                         }
                     }
                 },
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
-                        "browserTarget": "front-end:build"
+                        "browserTarget": "poke-buds:build"
                     }
                 },
                 "test": {
@@ -107,18 +107,18 @@
                     "builder": "@angular-devkit/build-angular:protractor",
                     "options": {
                         "protractorConfig": "e2e/protractor.conf.js",
-                        "devServerTarget": "front-end:serve"
+                        "devServerTarget": "poke-buds:serve"
                     },
                     "configurations": {
                         "production": {
-                            "devServerTarget": "front-end:serve:production"
+                            "devServerTarget": "poke-buds:serve:production"
                         }
                     }
                 }
             }
         }
     },
-    "defaultProject": "front-end",
+    "defaultProject": "poke-buds",
     "cli": {
         "analytics": false
     }
