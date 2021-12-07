@@ -79,7 +79,7 @@
       </div>
 
       <div class="card-container">
-        <button class="card card-small run-card" (click)="selection.value = 'run'; useRun()" tabindex="0"
+        <button class="card card-small full-card" (click)="selection.value = 'run'; useRun()" tabindex="0"
           [disabled]="runCounter == 0" [ngClass]="{'disabled-item': runCounter == 0}">
           <img src="../assets/items/run.png" alt="icon" style="height: 180%; margin-right: 10px;">
           <span>{{ items[4].itemName }} ({{ runCounter }}x)</span>
@@ -164,7 +164,7 @@
 
 <div class="content mobile-margin" role="main" *ngIf="endGame">
   <div class="card-container">
-    <button class="card card-small" *ngIf="endGame" (click)="playAgain()">
+    <button class="card card-small full-card" *ngIf="endGame" (click)="playAgain()">
       <img src="../assets/items/ball5_friend.png" alt="icon" style="height: 180%; margin-right: 10px;">
       <span><b>Play Again</b></span>
     </button>
