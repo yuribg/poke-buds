@@ -370,6 +370,27 @@ footer a {
 
 /* Responsive Styles */
 @media screen and (max-width: 767px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .encounter-section,
+  .user-section,
+  .card-container {
+    width: 100%;
+  }
+
+  .result-pics-container .pic-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .mobile-margin {
+    margin-top: 0px;
+  }
+
   .card-container > *:not(.circle-link),
   .terminal {
     width: 100%;

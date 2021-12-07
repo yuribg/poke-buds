@@ -160,11 +160,13 @@
   </div>
 </div>
 
-<div class="card-container">
-  <button class="card card-small" *ngIf="endGame" (click)="playAgain()">
-    <img src="../assets/items/ball5_friend.png" alt="icon" style="height: 180%; margin-right: 10px;">
-    <span><b>Play Again</b></span>
-  </button>
+<div class="content mobile-margin" role="main" *ngIf="endGame">
+  <div class="card-container">
+    <button class="card card-small" *ngIf="endGame" (click)="playAgain()">
+      <img src="../assets/items/ball5_friend.png" alt="icon" style="height: 180%; margin-right: 10px;">
+      <span><b>Play Again</b></span>
+    </button>
+  </div>
 </div>
 
 <router-outlet></router-outlet>
