@@ -374,6 +374,12 @@ footer a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 60px;
+  }
+
+  .pokemon-card {
+    margin: 0px;
+    height: 120px;
   }
 
   .encounter-section,
@@ -394,6 +400,24 @@ footer a {
   .card-container > *:not(.circle-link),
   .terminal {
     width: 100%;
+  }
+
+  .card-container {
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .card-container button.card.card-small {
+    width: 38%;
+    font-size: 12px;
+  }
+
+  .run-card {
+    width: 100% !important;
+  }
+
+  .user-info {
+    display: none;
   }
 
   .card:not(.highlight-card) {
